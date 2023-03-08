@@ -12,7 +12,7 @@ export const querySemesterAvailable = () => {
     async () => {
       try {
         const { data } = await axios({
-          url: "https://api.all-knu.accongbox.com/knu/period",
+          url: `${process.env.NEXT_PUBLIC_ENDPOINT}/knu/period`,
           method: "POST",
           headers: {
             "Content-Type": `application/json`,

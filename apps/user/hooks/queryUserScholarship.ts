@@ -21,7 +21,7 @@ export const queryScholarship = ({ year, semester }: YearSemester) => {
     async () => {
       try {
         const { data } = await axios({
-          url: "https://api.all-knu.accongbox.com/knu/scholarship",
+          url: `${process.env.NEXT_PUBLIC_ENDPOINT}/knu/scholarship`,
           method: "POST",
           headers: {
             "Content-Type": `application/json`,

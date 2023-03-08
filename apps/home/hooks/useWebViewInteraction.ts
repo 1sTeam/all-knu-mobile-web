@@ -1,6 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-
-interface IWebViewInteraction {}
+import { useEffect, useState } from "react";
 
 const useWebViewInteraction = () => {
   const [session, setSession] = useState<any>(null);

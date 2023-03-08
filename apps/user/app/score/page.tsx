@@ -29,19 +29,10 @@ const Score = () => {
   const { year, semester } = useRecoilValue(yearSemesterStore);
   const {
     data: { total, detail },
-    isError,
-    isFetching,
   } = queryUserScore({
     year,
     semester,
   });
-
-  if (isFetching) {
-    return;
-  }
-  if (isError) {
-    return;
-  }
 
   return (
     <>

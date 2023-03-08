@@ -8,13 +8,14 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "dotenv -e .env.dev turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@vitejs/plugin-basic-ssl": "^1.0.1",
     "eslint-config-custom": "*",
+    "dotenv-cli": "latest",
     "prettier": "latest",
     "turbo": "latest"
   },

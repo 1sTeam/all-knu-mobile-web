@@ -33,7 +33,7 @@ export const queryUserScore = ({ year, semester }: YearSemester) => {
     async () => {
       try {
         const { data } = await axios({
-          url: "https://api.all-knu.accongbox.com/knu/grade",
+          url: `${process.env.NEXT_PUBLIC_ENDPOINT}/knu/grade`,
           method: "POST",
           headers: {
             "Content-Type": `application/json`,

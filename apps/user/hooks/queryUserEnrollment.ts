@@ -21,7 +21,7 @@ export const queryUserEnrollment = ({ year, semester }: YearSemester) => {
     async () => {
       try {
         const { data } = await axios({
-          url: "https://api.all-knu.accongbox.com/knu/tuition",
+          url: `${process.env.NEXT_PUBLIC_ENDPOINT}/knu/tuition`,
           method: "POST",
           headers: {
             "Content-Type": `application/json`,
