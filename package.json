@@ -13,6 +13,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"
@@ -21,7 +22,9 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "next": "^13.2.1"
+    "next": "^13.2.1",
+    "recoil": "^0.7.7",
+    "vite": "^4.1.0"
   },
   "packageManager": "npm@8.19.2"
 }
