@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-basic-ssl": "^1.0.1",
-    "eslint-config-custom": "*",
     "dotenv-cli": "latest",
+    "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"
   },
