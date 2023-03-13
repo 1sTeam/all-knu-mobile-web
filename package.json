@@ -17,6 +17,7 @@
     "dotenv-cli": "latest",
     "eslint-config-custom": "*",
     "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
   "engines": {

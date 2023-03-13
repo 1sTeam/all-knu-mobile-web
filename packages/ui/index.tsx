@@ -1,3 +1,5 @@
+import "./theme/styles.css";
+
 import * as React from "react";
 export * from "./component/Button";
 export * from "./component/Select";
