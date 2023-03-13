@@ -4,12 +4,15 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "public/dist/**"]
+      "outputs": ["dist/**", ".next/**", "public/dist/**", "storybook-static/**"]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
+      "cache": false
+    },
+    "move": {
       "cache": false
     }
   }

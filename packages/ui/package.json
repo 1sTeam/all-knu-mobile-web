@@ -5,6 +5,9 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
+    "dev": "start-storybook -p 6008",
+    "build": "build-storybook --quiet",
+    "move": "mv storybook-static ../../storybook-static/ui",
     "lint": "eslint \"**/*.ts*\""
   },
   "devDependencies": {
@@ -15,6 +18,17 @@
     "react": "^18.2.0",
     "react-icons": "^4.8.0",
     "tsconfig": "*",
-    "typescript": "^4.5.2"
-  }
+    "typescript": "^4.5.2",
+    "@storybook/react": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@babel/core": "^7.21.0",
+    "babel-loader": "^8.3.0"
+  },
+  "dependencies": {}
 }
