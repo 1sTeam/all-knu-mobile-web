@@ -1,5 +1,7 @@
 "use client";
 
+import "./global.css";
+
 import { QueryClient, QueryClientProvider } from "react-query";
 import { RecoilRoot } from "recoil";
 

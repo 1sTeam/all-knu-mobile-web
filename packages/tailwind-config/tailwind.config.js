@@ -1,17 +1,23 @@
-const colors = require("tailwindcss/colors");
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [
-    // app content
-    `src/**/*.{js,ts,jsx,tsx}`,
-    // include packages if not transpiling
-    // "../../packages/**/*.{js,ts,jsx,tsx}",
+    "../../packages/ui/**/*.{ts,tsx}",
+    `./src/**/*.{js,ts,jsx,tsx}`,
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontSize: {
+        xxs: "0.6rem",
+      },
       colors: {
-        brandblue: colors.blue[500],
-        brandred: colors.red[500],
+        primary: "#6260ED",
+        secondary: "#7674FF",
+        sub: "#F8F9FA",
+        destructive: "#F25B5A",
+        confirm: "#4BCCAE",
       },
     },
   },

@@ -16,17 +16,17 @@ export const TabBar = ({ tabs, index, onChange }: TabBarProps) => {
   const handleSelectTabButton = useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       const { className } = e.currentTarget;
-      const nextIndex = tabs.findIndex(({ value }) => value === className);
-      setSelectedTab(className);
+      const nextIndex = tabs.findIndex(({ value }) =>
+        className.match(new RegExp(value, "g"))
+      );
+      setSelectedTab(tabs[nextIndex].value);
       onChange(nextIndex);
-      // if (selectedTab !== className) {
-      // }
     },
     [tabs]
   );
 
   return (
-    <div style={{ display: "flex", gap: 4 }}>
+    <div className="flex gap-4">
       {tabs.map(({ name, value }) => (
         <TabBarItem
           key={`announce_tab_${value}`}

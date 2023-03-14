@@ -26,6 +26,7 @@
   "dependencies": {
     "next": "^13.2.1",
     "recoil": "^0.7.7",
+    "tsup": "^6.6.3",
     "vite": "^4.1.0"
   },
   "packageManager": "npm@8.19.2"

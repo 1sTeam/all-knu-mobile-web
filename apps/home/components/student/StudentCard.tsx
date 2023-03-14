@@ -7,7 +7,7 @@ const StudentCard = ({ student: { name, id, major } }: StudentCardProps) => {
     <>
       <div>image</div>
       <div>
-        <p>{major}</p>
+        <p className="text-cyan-500">{major}</p>
         <p>{id}</p>
         <p>{name}</p>
       </div>
